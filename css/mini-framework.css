@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open sans", sans-serif;
+}
+
+body{
+    background-color: #888;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    background-color: black;
+}
+
+header h3{
+    font-family: "Open sans";
+    color: rgb(236, 236, 236);
+    font-weight: 300;
+    font-size: 28px;
+}
+
+header div.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+}
+
+.menu a{
+    color: rgb(236, 236, 236);
+    text-decoration: none;
+    font-size: 17px;
+}
