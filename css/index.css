@@ -1,0 +1,351 @@
+*{
+    font-family: "open sans", sans-serif;
+}
+
+body{
+    background-color: #888;
+    overflow-x: hidden;
+}
+
+div.title-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 5px 0;
+}
+
+.title-container h3 {
+    text-align: center;
+    color: white;
+    width: 75%;
+    padding: 5px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 50%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*********** Sessão Home ************/
+section.home{
+    background-image: url(../image/img-fundo-port.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+}
+
+div.container-home{
+    background-color: rgba(0, 0, 0, 0.301);
+    height: 85vh;
+    width: 100vw;
+    position: relative;
+}
+
+div.container-info-home{
+    background-color: #000000a9;
+    display: inline-block;
+    width: 450px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    right: 250px;
+    border-radius: 15px;
+    transform: translateY(-50%);
+    text-align: center;
+    box-shadow: 5px 5px 20px 0px #0000008c;}
+
+div.container-info-home h1{
+    color: white;
+    font-size: 1.9em;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+div.container-info-home p{
+    color: rgb(164, 60, 250);
+    font-size: 25px;
+}
+
+/* section.home{display: none;} */
+
+/*********** Fim Sessão Home ************/
+
+/*********** Sessão Projetos ************/
+
+div.container-projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+nav.category{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    padding: 15px;
+}
+
+.category button{
+    width: 180px;
+    padding: 15px 0;
+    font-size: 20px;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-radius: 15px;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px 0px #0000008c;
+    font-weight: 300;
+}
+
+.category button:hover{
+    background-color: rgb(164, 60, 250);
+    color: #ffffff;
+    box-shadow: 3px 3px 10px 0px #0000008c;
+    font-weight: 500;
+}
+
+button.active{
+    background-color: rgb(164, 60, 250);
+    color: #ffffff;
+    box-shadow: 3px 3px 10px 0px #0000008c;
+    font-weight: 500;
+}
+
+div.container-itens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    gap: 30px;
+}
+
+div.item{
+    width: 260px;
+    height: 400px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.item img{
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    border-radius: 5px;
+    width: 230px;
+    height: 210px;
+}
+
+.description-item h2{
+    font-size: 22px;
+    color: hsl(0, 0%, 5%);
+}
+
+.description-item h3{
+    font-size: 12px;
+    color: hsl(0, 0%, 20%);
+}
+
+.description-item p{
+    font-size: 15px;
+    margin-top: 10px;
+    color: hsl(0, 0%, 10%);
+}
+
+.description-item a{
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(24, 24, 24);
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px 0px #0000008c;
+
+}
+
+.description-item a:hover{
+    background-color: rgba(164, 60, 250, 0.945);
+    box-shadow: 3px 3px 10px 0px #0000008c;
+    font-weight: 500;
+}
+
+
+
+
+
+/*** Configurações individuais Itens ***/
+
+/** Blog Preview Card **/
+div.bpc{
+    background-color: #ffffff;
+}
+
+.bpc .description-item h2{
+    color: #121212;
+}
+
+.bpc .description-item h3{
+    color: #000000;
+}
+
+.bpc .description-item p{
+    color: #808080;
+}
+
+.bpc .description-item a{
+    background-color: #f4d04e;
+    color: #000000;
+}
+
+/* .bpc .description-item a:hover{
+    background-color: #ffffff;
+    box-shadow: 3px 3px 10px 0px #0000008c;
+    font-weight: 500;
+    color: #f4d04e; 
+} */
+
+.bpc:hover{
+    background-color: #f4d04e;
+}
+
+.bpc:hover > .description-item a{
+    background-color: #ffffff;
+    box-shadow: 3px 3px 10px 0px #0000008c;
+    font-weight: 500;
+    color: #000000; 
+}
+
+/***************************/
+
+/** FAQ Accordion **/
+div.faq{
+    background-color: #faf0ff;
+}
+
+.faq .description-item h2{
+    color: #000000;
+}
+
+.faq .description-item h3{
+    color: #ad28eb;
+}
+
+.faq .description-item p{
+    color: #8c6991;
+}
+
+.faq .description-item a{
+    background-color: #ad28eb;
+    color: #ffffff;
+}
+
+.faq .description-item a:hover{
+    background-color: #301534;
+    box-shadow: 3px 3px 10px 0px #0000008c;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%); 
+}
+
+/***************************/
+
+/** Recipe Page **/
+div.recpag{
+    background-color: #f3e6d8;
+}
+
+.recpag .description-item h2{
+    color: #302d2c;
+}
+
+.recpag .description-item h3{
+    color: #854632;
+}
+
+.recpag .description-item p{
+    color: #5f574e;
+}
+
+.recpag .description-item a{
+    background-color: #ffffff;
+    color: #302d2c;
+}
+
+.recpag .description-item a:hover{
+    background-color: #fff5fa;
+    box-shadow: 3px 3px 10px 0px #0000008c;
+    font-weight: 500;
+    color: hsl(332, 51%, 32%); 
+}
+
+/************************/
+
+/** Results Summary Component **/
+.rsp{
+    background-color: #fff;
+}
+
+.rsp .description-item h2{
+    color: #2e2be9;
+}
+
+.rsp .description-item h3, .rsp .description-item p{
+    color: #303b5a;
+}
+
+.rsp .description-item a{
+    background-color: #303b5a;
+}
+
+.rsp .description-item a:hover{
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    box-shadow: 3px 3px 10px 0px #0000008c;
+    font-weight: 500;
+}
+
+/**************************/
+
+/** Social Link Profile **/
+div.slp{
+    background-color: #141414;
+}
+
+.slp .description-item h2{
+    color: #ffffff;
+}
+
+.slp .description-item h3{
+    color: #c5f82a;
+}
+
+.slp .description-item p{
+    color: #ffffff;
+}
+
+.slp .description-item a{
+    background-color: #333333;
+}
+
+.slp .description-item a:hover{
+    background-color: #c5f82a;
+    box-shadow: 3px 3px 10px 0px #0000008c;
+    font-weight: 500;
+    color: hsl(0, 0%, 8%); 
+}
+
+/*****************************/

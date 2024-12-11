@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+body{
+    background-color: hsl(0, 0%, 8%);
+}
+
+main{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: hsl(0, 0%, 12%);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+section.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.description img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.description .data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.data h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: normal;
+    font-size: 1.6em;
+}
+
+div.data>p{
+    color: hsl(75, 94%, 57%);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.description p{
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+button{
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover{
+    background-color: hsl(75, 94%, 57%);
+    color:hsl(0, 0%, 8%);
+}

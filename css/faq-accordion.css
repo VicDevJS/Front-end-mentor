@@ -1,0 +1,95 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(279, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "work sans";
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 25px;
+    background-color: var(--light-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-off {
+    display: none;
+}
+
+.d-on{
+    display: block;
+}
+
+img.background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+main {
+    position: relative;
+    z-index: 9;
+    max-width: 550px;
+    min-height: 60vh;
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+div.title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+div.title img {
+    width: 35px;
+}
+
+div.title h1 {
+    font-size: 45px;
+}
+
+div.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+div.question h2{
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.question h2:hover{
+    color: #ad28eb;
+}
+
+button{
+    background-color: var(--white);
+    border: none;
+    height: 30px;
+    cursor: pointer;
+}
+
+div.question > button > img{
+    width: 30px;
+}
+
+section.container-question p{
+    font-size: 15px;
+    color: var(--grayish-purple);
+}
