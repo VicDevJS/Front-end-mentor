@@ -2,11 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "open sans", sans-serif;
-}
-
-body{
-    background-color: #888;
 }
 
 header{
@@ -15,6 +10,10 @@ header{
     align-items: center;
     padding: 15px 80px;
     background-color: black;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 
 header h3{
@@ -22,6 +21,13 @@ header h3{
     color: rgb(236, 236, 236);
     font-weight: 300;
     font-size: 28px;
+    cursor: pointer;
+}
+
+header h3:hover{
+    color: rgb(164, 60, 250);
+    font-weight: normal;
+    font-size: 27.6px;
 }
 
 header div.menu{
@@ -35,4 +41,8 @@ header div.menu{
     color: rgb(236, 236, 236);
     text-decoration: none;
     font-size: 17px;
+}
+
+.menu a:hover{
+    color: rgb(164, 60, 250);
 }
