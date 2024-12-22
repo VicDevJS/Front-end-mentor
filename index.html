@@ -40,58 +40,110 @@
 
             <div class="container-projetos">
                 <nav class="category">
-                    <button id="newbie" class="active">Newbie 10</button>
-                    <button id="junior">Junior</button>
-                    <button id="intermediate">Intermediate</button>
-                    <button id="advanced">Advanced</button>
+                    <button id="newbieButton actived" class="disabled" onclick="toggleCategory(buttons.newbie)">Newbie</button>
+                    <button id="juniorButton" class="disabled" onclick="toggleCategory(buttons.junior)">Junior</button>
+                    <button id="intermediateButton" class="disabled" onclick="toggleCategory(buttons.intermediated)">Intermediate</button>
+                    <button id="advancedButton" class="disabled" onclick="toggleCategory(buttons.advanced)">Advanced</button>
                 </nav>
 
                 <div class="container-itens">
-                    <div class="item bpc">
-                        <img src="./image/blog-preview-card.png" alt="">
-                        <div class="description-item">
-                            <h2>Blog Preview Card</h2>
-                            <h3>HTML & CSS</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a href="./pages/blog-preview-card.html">Ver Mais</a>
+                    <section class="newbie">
+                        <div class="item bpc">
+                            <img src="./image/blog-preview-card.png" alt="">
+                            <div class="description-item">
+                                <h2>Blog Preview Card</h2>
+                                <h3>HTML & CSS</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a href="./pages/blog-preview-card.html">Ver Mais</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item faq">
-                        <img src="./image/faq.png" alt="">
-                        <div class="description-item">
-                            <h2>FAQ Accordion</h2>
-                            <h3>HTML & CSS</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a href="./pages/faq-accordion.html">Ver Mais</a>
+                        <div class="item faq">
+                            <img src="./image/faq.png" alt="">
+                            <div class="description-item">
+                                <h2>FAQ Accordion</h2>
+                                <h3>HTML & CSS</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a href="./pages/faq-accordion.html">Ver Mais</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item recpag">
-                        <img src="./image/recpag.png" alt="">
-                        <div class="description-item">
-                            <h2>Recipe Page</h2>
-                            <h3>HTML & CSS</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a href="./pages/recipe-page.html">Ver Mais</a>
+                        <div class="item recpag">
+                            <img src="./image/recpag.png" alt="">
+                            <div class="description-item">
+                                <h2>Recipe Page</h2>
+                                <h3>HTML & CSS</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a href="./pages/recipe-page.html">Ver Mais</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item rsp">
-                        <img src="./image/resumcom.png" alt="">
-                        <div class="description-item">
-                            <h2>Results Summary Component</h2>
-                            <h3>HTML & CSS</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a href="./pages/results-summary-component.html">Ver Mais</a>
+                        <div class="item rsp">
+                            <img src="./image/resumcom.png" alt="">
+                            <div class="description-item">
+                                <h2>Results Summary Component</h2>
+                                <h3>HTML & CSS</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a href="./pages/results-summary-component.html">Ver Mais</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item slp">
-                        <img src="./image/slp.png" alt="">
-                        <div class="description-item">
-                            <h2>Social Link Profile</h2>
-                            <h3>HTML & CSS</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a href="./pages/social-links-profile.html">Ver Mais</a>
+                        <div class="item slp">
+                            <img src="./image/slp.png" alt="">
+                            <div class="description-item">
+                                <h2>Social Link Profile</h2>
+                                <h3>HTML & CSS</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a href="./pages/social-links-profile.html">Ver Mais</a>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+                    <!-- /.newbie -->
+
+                    <section class="junior d-none">
+                        <div class="item">
+                            <img src="./image/blog-preview-card.png" alt="">
+                            <div class="description-item">
+                                <h2>Blog Preview Card</h2>
+                                <h3>HTML & CSS</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a href="./pages/blog-preview-card.html">Ver Mais</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./image/faq.png" alt="">
+                            <div class="description-item">
+                                <h2>FAQ Accordion</h2>
+                                <h3>HTML & CSS</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a href="./pages/faq-accordion.html">Ver Mais</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./image/recpag.png" alt="">
+                            <div class="description-item">
+                                <h2>Recipe Page</h2>
+                                <h3>HTML & CSS</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a href="./pages/recipe-page.html">Ver Mais</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./image/resumcom.png" alt="">
+                            <div class="description-item">
+                                <h2>Results Summary Component</h2>
+                                <h3>HTML & CSS</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a href="./pages/results-summary-component.html">Ver Mais</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./image/slp.png" alt="">
+                            <div class="description-item">
+                                <h2>Social Link Profile</h2>
+                                <h3>HTML & CSS</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a href="./pages/social-links-profile.html">Ver Mais</a>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /.junior -->
                 </div>
             </div>
 

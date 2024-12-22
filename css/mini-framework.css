@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+section.d-none, div.disabled{
+    display: none;
+}
+
 header{
     display: flex;
     justify-content: space-between;

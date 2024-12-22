@@ -114,14 +114,15 @@ nav.category{
     font-weight: 500;
 }
 
-button.active{
+button#actived{
     background-color: rgb(164, 60, 250);
     color: #ffffff;
     box-shadow: 3px 3px 10px 0px #0000008c;
     font-weight: 500;
+    font-size: 22px;
 }
 
-div.container-itens{
+.newbie, .junior, .intermediate, .advanced{
     display: flex;
     justify-content: space-around;
     align-items: center;
